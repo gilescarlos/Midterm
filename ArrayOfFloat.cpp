@@ -1,6 +1,4 @@
 #include<iostream>
-#include<time.h>
-#include<stdlib.h>
 
 using namespace std;
 
@@ -54,15 +52,6 @@ public:
 
         return min;
     }
-
-    float getAverage() {
-        float sum = 0;
-
-        for(int i = 0; i < size; i++)
-            sum += array[i];
-
-        return sum / size;
-    }
 };
 
 int main()
@@ -82,7 +71,6 @@ int main()
     cout << "Get value at index 2: " << array.getValueAtIndex(2) << endl;
     cout << "Max value in array: " << array.getMax() << endl;
     cout << "Min value in array: " << array.getMin() << endl;
-    cout << "Average value of array: " << array.getAverage() << endl;
 
     return 0;
 }
